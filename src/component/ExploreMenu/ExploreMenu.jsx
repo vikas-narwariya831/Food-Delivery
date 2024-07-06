@@ -16,14 +16,14 @@ export default function ExploreMenu({ setCategory, category }) {
           <div
             key={index}
             onClick={() => setCategory(prev => (prev === item.menu_name ? "All" : item.menu_name))}
-            className="cursor-pointer"
+            className="flex-shrink-0 cursor-pointer"
           >
             <img
               src={item.menu_image}
               alt={item.menu_name}
-              className={`w-[150px] sm:w-[200px] ${category === item.menu_name ? 'border-[4px] rounded-full border-tomato p-0.5' : ''}`}
+              className={`w-[100px] sm:w-[150px] md:w-[200px] ${category === item.menu_name ? 'border-[4px] rounded-full border-tomato p-0.5' : ''}`}
             />
-            <p className="text-[#747474] text-[16px] sm:text-[21px]">{item.menu_name}</p>
+            <p className="text-[#747474] text-[14px] sm:text-[16px] md:text-[21px]">{item.menu_name}</p>
           </div>
         ))}
       </div>

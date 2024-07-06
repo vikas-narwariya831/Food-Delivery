@@ -1,13 +1,14 @@
 import React, { useState } from 'react'
-import Header from '../../Header/Header'
 import ExploreMenu from '../../ExploreMenu/ExploreMenu'
 import FoodDisplay from '../../FoodDisplay/FoodDisplay'
+import Content from '../../Content/Content'
 
 export default function Home() {
 
   const [category,setCategory]=useState(`All`)
   return (
-    <div><Header/>
+    <div>
+      <Content/>
     <ExploreMenu category={category} setCategory={setCategory}/>
     <FoodDisplay category={category}/>
     </div>
