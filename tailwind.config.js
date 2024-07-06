@@ -18,6 +18,10 @@ export default {
       colors: {
         tomato: '#ff6347',
       },
+      boxShadow: {
+        'custom-black': '0px 0px 10px rgba(0, 0, 0, 0.15)',
+        
+      },
     },
   },
   plugins: [],
