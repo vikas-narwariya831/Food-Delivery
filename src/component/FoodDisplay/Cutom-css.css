@@ -1,7 +1,5 @@
 .grid-auto-fill {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-    gap: 30px; /* Adjust the gap as needed */
-    row-gap: 50px;
-    margin-top: 30px;
-  }
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+}
