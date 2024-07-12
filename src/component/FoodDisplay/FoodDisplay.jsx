@@ -11,7 +11,10 @@ const FoodDisplay = ({category}) => {
         <h2 className='text-[28.8px] font-semibold'>Top Dishes Near You</h2>
         <div className='grid-auto-fill'>
         {food_list.map((item,index)=>{
+          {console.log(category,item.category)}
+          if(category==="All"||category===item.category){
    return <FoodItem key={index} id={item._id} name={item.name} description={item.description} price={item.price} image={item.image}/>
+  }
         })}
         </div>
     </div>

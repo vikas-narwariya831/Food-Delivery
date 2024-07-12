@@ -11,6 +11,7 @@ export default function Home() {
       <Content/>
     <ExploreMenu category={category} setCategory={setCategory}/>
     <FoodDisplay category={category}/>
+    {/* <DownloadApp/> */}
     </div>
   )
 }
