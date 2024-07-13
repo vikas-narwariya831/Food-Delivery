@@ -3,7 +3,7 @@ import { assets } from '../assets/assets';
 
 function Footer() {
     return (
-        <div className="py-8 text-white bg-gray-800 md:justify-center">
+        <div className="py-8 text-white bg-gray-800 md:justify-center" id='mobile-App'>
             <div className="container flex flex-wrap items-start justify-between px-4 mx-auto md:px-8 lg:px-16">
                 <div className="w-full mb-8 md:w-1/3 md:mb-0">
                     <img src={assets.logo} alt="Company Logo" className="mb-4" />

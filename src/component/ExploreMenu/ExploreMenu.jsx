@@ -4,7 +4,7 @@ import './custom-scrollbar.css'; // Import the custom scrollbar CSS
 
 export default function ExploreMenu({ setCategory, category }) {
   return (
-    <div>
+    <div  id='explore-menu'>
       <h1 className="mb-2 text-2xl font-medium sm:text-3xl">
         Explore our menu
       </h1>
