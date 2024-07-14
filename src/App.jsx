@@ -6,8 +6,8 @@ import FoodItem from './component/FoodItem/FoodItem';
 import Content from './component/Content/Content';
 import ExploreMenu from './component/ExploreMenu/ExploreMenu';
 import { useState } from 'react';
-import Cart from './component/pages/Cart/Cart';
 import LoginPopUp from './component/LoginPopUp/LoginPopUp';
+import Cart from './component/pages/Cart/Cart';
 
 export default function App() {
   const [showLogin,setShowLogin]=useState(false)
