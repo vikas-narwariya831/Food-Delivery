@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { StoreContext } from '../../StoreContext/StoreContext';
 
-function Cart() {
+function CartDashboard() {
   const { cartItems, food_list, removeFromCart } = useContext(StoreContext);
 
   // Calculate subtotal
@@ -78,7 +78,7 @@ function Cart() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
-export default Cart;
+export default CartDashboard;
