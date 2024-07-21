@@ -16,10 +16,10 @@ export default function App() {
     //     </div>
     //     <Footer/>
     //     </>
-    <>
+    < div className='overflow-x-hidden overflow-y-hidden '>
       {showLogin ? <LoginPopUp setShowLogin={setShowLogin} /> : <></>}
 
-      <div className="mx-auto w-80 md:w-4/5 lg:w-3/4 xl">    <Navbar setShowLogin={setShowLogin} />
+      <div className="mx-auto w-80 md:w-4/5 lg:w-3/4 xl ">    <Navbar setShowLogin={setShowLogin} />
         <Routes>
 
           <Route path='/' element={<Home />} />
@@ -28,7 +28,7 @@ export default function App() {
         </Routes>
       </div>
       <Footer />
-    </>
+    </div>
 
 
   );

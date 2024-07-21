@@ -7,7 +7,7 @@ export default function Home() {
   const [category, setCategory] = useState('All');
 
   return (
-    <div>
+    <div className=''>
       <Content />
       <ExploreMenu category={category} setCategory={setCategory} />
       <FoodDisplay category={category} />

@@ -34,12 +34,12 @@ export default function Navbar({ setShowLogin }) {
         </a>
       </ul>
       <div className="flex items-center gap-4 lg:gap-10">
-        <img src={assets.search_icon} alt="Search" className="w-5 h-5 md:w-auto md:h-auto" />
+        <img src={assets.search_icon} alt="Search" className="w-5 h-5 md:w-auto md:h-auto sm:hidden" />
         <div className="relative">
           <Link to='/cart' className="">
-            <img src={assets.basket_icon} alt="Basket" className="w-5 h-5 md:w-auto md:h-auto" />
+            <img src={assets.basket_icon} alt="Basket" className="w-5 h-5 md:w-auto md:h-auto sm:hidden" />
           </Link>
-          <div className="absolute bg-[#ff6347] min-w-[10px] min-h-[10px] rounded-md top-[-4px] md:top-[-8px] right-[-4px] md:right-[-8px]"></div>
+          <div className="absolute bg-[#ff6347] md:hidden sm:hidden min-w-[10px] min-h-[10px] rounded-md top-[-4px] md:top-[-8px] right-[-4px] md:right-[-8px]"></div>
         </div>
         <button onClick={() => setShowLogin(true)} className="px-4 py-2 text-xs text-gray-700 transition duration-300 bg-transparent border-2 border-red-500 rounded-lg cursor-pointer md:text-base hover:bg-pink-50">
           Sign In
